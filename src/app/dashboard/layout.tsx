@@ -25,7 +25,9 @@ export default async function DashboardLayout({
 
   return (
     <div className="odenix-dashboard-root">
-      <DashboardSidebar tenantName={tenantName} userEmail={session.email} />
+      <div className="odenix-sidebar-shell">
+        <DashboardSidebar tenantName={tenantName} userEmail={session.email} />
+      </div>
       <main className="odenix-main">{children}</main>
     </div>
   );

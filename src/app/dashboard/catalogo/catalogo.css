@@ -24,7 +24,7 @@
 }
 
 .catalogo-glass-panel {
-  border-radius: 16px;
+  border-radius: 15px;
   background: rgba(46, 16, 101, 0.28);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -47,7 +47,7 @@
   align-items: center;
   gap: 0.45rem;
   padding: 0.65rem 1.1rem;
-  border-radius: 12px;
+  border-radius: 15px;
   border: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -70,7 +70,7 @@
 
 .catalogo-btn-ghost {
   padding: 0.55rem 0.9rem;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgba(155, 93, 229, 0.4);
   background: rgba(11, 4, 16, 0.35);
   color: var(--odenix-text, #f9fafb);
@@ -118,7 +118,7 @@
 .catalogo-thumb {
   width: 52px;
   height: 52px;
-  border-radius: 10px;
+  border-radius: 15px;
   object-fit: cover;
   background: rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(155, 93, 229, 0.25);
@@ -127,7 +127,7 @@
 .catalogo-thumb-placeholder {
   width: 52px;
   height: 52px;
-  border-radius: 10px;
+  border-radius: 15px;
   background: rgba(155, 93, 229, 0.15);
   display: flex;
   align-items: center;
@@ -161,7 +161,7 @@
 .catalogo-error {
   margin: 0 0 1rem;
   padding: 0.75rem 1rem;
-  border-radius: 12px;
+  border-radius: 15px;
   background: rgba(220, 38, 38, 0.15);
   border: 1px solid rgba(248, 113, 113, 0.35);
   color: #fecaca;
@@ -174,7 +174,7 @@
   right: 1.5rem;
   z-index: 60;
   padding: 0.85rem 1.2rem;
-  border-radius: 12px;
+  border-radius: 15px;
   background: rgba(22, 101, 52, 0.92);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(163, 230, 53, 0.45);
@@ -213,7 +213,7 @@
   max-width: 480px;
   max-height: min(92vh, 640px);
   overflow-y: auto;
-  border-radius: 18px;
+  border-radius: 15px;
   background: rgba(46, 16, 101, 0.45);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -245,7 +245,7 @@
 .catalogo-field input,
 .catalogo-field textarea {
   padding: 0.65rem 0.75rem;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgba(155, 93, 229, 0.35);
   background: rgba(11, 4, 16, 0.55);
   color: var(--odenix-text, #f9fafb);
@@ -279,7 +279,7 @@
 .catalogo-file-input-glass {
   position: relative;
   display: block;
-  border-radius: 12px;
+  border-radius: 15px;
   border: 1px solid rgba(155, 93, 229, 0.38);
   background: rgba(11, 4, 16, 0.45);
   backdrop-filter: blur(10px);
@@ -326,7 +326,7 @@
 .catalogo-file-preview img {
   width: 72px;
   height: 72px;
-  border-radius: 12px;
+  border-radius: 15px;
   object-fit: cover;
   border: 1px solid rgba(155, 93, 229, 0.35);
   background: rgba(0, 0, 0, 0.35);
@@ -335,7 +335,7 @@
 .catalogo-file-preview-remove {
   padding: 0.35rem 0.65rem;
   font-size: 0.78rem;
-  border-radius: 8px;
+  border-radius: 15px;
   border: 1px solid rgba(248, 113, 113, 0.45);
   background: rgba(127, 29, 29, 0.25);
   color: #fecaca;

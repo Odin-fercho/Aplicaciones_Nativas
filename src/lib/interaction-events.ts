@@ -2,6 +2,8 @@ type BaserowSelectLike = { id: number; value: string };
 
 export type InteractionEventRow = {
   id: number;
+  /** ISO de creación (Baserow); sirve para métricas “hoy” en el portal. */
+  created_on?: string;
   Tipo?: string | BaserowSelectLike;
   tipo?: string | BaserowSelectLike;
   Detalle?: string;

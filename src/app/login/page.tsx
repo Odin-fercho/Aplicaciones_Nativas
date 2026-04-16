@@ -36,29 +36,54 @@ export default function LoginPage() {
   };
 
   return (
-    <main style={{ padding: '2.5rem', maxWidth: 420 }}>
-      <h1 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Iniciar sesión</h1>
+    <main
+      style={{
+        padding: '2.5rem',
+        maxWidth: 420,
+        margin: '0 auto',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        color: '#f9fafb',
+      }}
+    >
+      <h1 style={{ fontSize: '1.5rem', marginBottom: '1rem', fontWeight: 800, letterSpacing: '-0.02em' }}>
+        Iniciar sesión
+      </h1>
       <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-        <label style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <span>Email</span>
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 4, fontSize: '0.85rem' }}>
+          <span style={{ color: 'rgba(249,250,251,0.72)' }}>Email</span>
           <input
             type="email"
             autoComplete="username"
             value={email}
             onChange={(ev) => setEmail(ev.target.value)}
             required
-            style={{ padding: '0.6rem', borderRadius: 8, border: '1px solid #4c1d95' }}
+            style={{
+              padding: '0.65rem 0.75rem',
+              borderRadius: 15,
+              border: '1px solid rgba(155, 93, 229, 0.45)',
+              background: '#161616',
+              color: '#f9fafb',
+            }}
           />
         </label>
-        <label style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <span>Contraseña</span>
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 4, fontSize: '0.85rem' }}>
+          <span style={{ color: 'rgba(249,250,251,0.72)' }}>Contraseña</span>
           <input
             type="password"
             autoComplete="current-password"
             value={password}
             onChange={(ev) => setPassword(ev.target.value)}
             required
-            style={{ padding: '0.6rem', borderRadius: 8, border: '1px solid #4c1d95' }}
+            style={{
+              padding: '0.65rem 0.75rem',
+              borderRadius: 15,
+              border: '1px solid rgba(155, 93, 229, 0.45)',
+              background: '#161616',
+              color: '#f9fafb',
+            }}
           />
         </label>
         {error ? (
@@ -72,12 +97,13 @@ export default function LoginPage() {
           style={{
             marginTop: 8,
             padding: '0.75rem',
-            borderRadius: 10,
+            borderRadius: 15,
             border: 'none',
             fontWeight: 600,
             cursor: loading ? 'wait' : 'pointer',
-            background: '#9b5de5',
+            background: 'linear-gradient(135deg, #9b5de5, #7c3aed)',
             color: '#fff',
+            boxShadow: '0 0 28px rgba(155, 93, 229, 0.35)',
           }}
         >
           {loading ? 'Entrando…' : 'Entrar'}
